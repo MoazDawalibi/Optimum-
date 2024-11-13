@@ -1,0 +1,31 @@
+
+
+:root {
+    --primary: black;
+    --secondary: #ffc801;
+    --text: white;
+    --bg: #242628;
+    --bg2: #33383d;
+    --white: white;
+    --black: black;
+    --BGLogo : white ;
+    --BGElement : #ffc801 ;
+
+}
+:root:has(.dark){
+    --from_api: #01ffd5;
+
+    --primary: black;
+    --secondary: var(--from_api);
+
+    --text: white;
+    --bg: #232425;
+    --bg2: #33383d;
+    --white: white;
+    --black: black;
+    --BGLogo : white ;
+    --BGElement : #01ffd5 ;
+
+
+
+}

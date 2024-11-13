@@ -1,0 +1,113 @@
+.Services{
+     max-width: 100%;
+    width: 100vw;
+    display: flex;align-items: center; flex-direction: column; 
+    // justify-content: space-around;
+    
+    // gap: 370px;
+    height: 100vh ;
+    
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding: 0px 7vw;
+    
+    @include devices(mobile){
+        &{
+            height: 70vh !important ;
+
+        }
+        .contener-service{
+            align-items: flex-start !important;
+
+        }
+
+    }
+    .contener-service{
+        display: flex;
+        direction: ltr !important;
+        margin-top: 20vh;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        width: 100%;
+    }
+}
+
+.Services_Down_Top,
+.Services_Down_Down{
+    width: 100%;
+display: flex; justify-content: space-between;  align-items: center;
+flex-wrap: wrap;
+  
+}
+.Services_Down{
+    width: 100%;
+    display: flex; flex-direction: column; justify-content: space-between; align-items: center;
+    gap: 80px;
+}
+
+.Services{
+ 
+      .loader span {
+        direction: ltr !important;
+        position: absolute;
+        color: #fff;
+        transform: translate(-50%, -50%);
+        font-size: 5vw;
+        letter-spacing: 5px;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+}
+
+    @include devices(mobile){
+        .loader span {
+            font-size: 18px;
+            transform: translate(-50% ,-100px  );
+
+    }
+    }
+    @include devices(tablet){
+      .loader span {
+          font-size: 18px;
+          transform: translate(-50% ,-40px  );
+
+  }
+  }
+      
+      .loader span:nth-child(1) {
+        color: transparent;
+        -webkit-text-stroke: 0.3px var(--secondary);
+      }
+      
+      .loader span:nth-child(2) {
+        color: var(--secondary);
+        -webkit-text-stroke: 1px var(--secondary);
+        animation: uiverse723 3s ease-in-out infinite;
+      }
+      
+      @keyframes uiverse723 {
+        0%, 100% {
+          clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 
+           54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+        }
+      
+        50% {
+          clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 
+           51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+        }
+      }
+}
+
+.ar{
+  .Services{
+ 
+    .loader span {
+    
+      transform: translate(+50%, 0%);
+   
+    
+}
+  }
+}
